@@ -113,11 +113,12 @@ names[1] = 'aaquib'
 #car['Hell cat'] = 'Dodge'
 #print(car)
 
-car = {
-    'jenny' : 'female',
-     'lang' : ['C','C#','Java'],
-    'mac' : 'male',
-    'langu' : ['go lang', 'python']
+user_0 = {
+'username': 'efermi',
+'first': 'enrico',
+'last': 'fermi',
 }
-print(car['jenny'])
 
+for key, value in user_0.items():
+    print("\nKey: " + key)
+    print("Value: " + value)

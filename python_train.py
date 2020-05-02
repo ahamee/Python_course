@@ -113,12 +113,18 @@ names[1] = 'aaquib'
 #car['Hell cat'] = 'Dodge'
 #print(car)
 
-user_0 = {
-'username': 'efermi',
-'first': 'enrico',
-'last': 'fermi',
-}
+# Looping through dictionary
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+    }
 
-for key, value in user_0.items():
-    print("\nKey: " + key)
-    print("Value: " + value)
+#for name, language in favorite_languages.items():
+#    print(name.title() + "'s favorite language is " + language.title() + ".")
+
+# Looping through all keys in dictionary
+for name in favorite_languages.keys():
+    print(name.title())
+

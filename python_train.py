@@ -37,18 +37,18 @@ y = 0
 #else:
 #    print("N")
 
-# List
-names = ['chudi ba', 'abdul', 'jaffer', 'waseem']
+## List
+#names = ['chudi ba', 'abdul', 'jaffer', 'waseem']
 
 # append will add object to the end of the list
-names.append('nadeem')
+#names.append('nadeem')
 #names.append(99)
 
-# insert will add object at a particular index position
-names.insert(0, 'javeed')
+## insert will add object at a particular index position
+#names.insert(0, 'javeed')
 
-# Replace
-names[1] = 'aaquib'
+## Replace
+#names[1] = 'aaquib'
 
 # pop method remves the object based on the vaue passed into the pop method
 #poped_name = names.pop()
@@ -113,18 +113,70 @@ names[1] = 'aaquib'
 #car['Hell cat'] = 'Dodge'
 #print(car)
 
-# Looping through dictionary
-favorite_languages = {
-    'jen': 'python',
-    'sarah': 'c',
-    'edward': 'ruby',
-    'phil': 'python',
-    }
+## Looping through dictionary
+#favorite_languages = {
+#    'jen': 'python',
+#    'sarah': 'c',
+#    'edward': 'ruby',
+#    'phil': 'python',
+#    }
+#favorite_languages['Tam'] = 'C#'
+#print(favorite_languages)
 
 #for name, language in favorite_languages.items():
 #    print(name.title() + "'s favorite language is " + language.title() + ".")
 
-# Looping through all keys in dictionary
-for name in favorite_languages.keys():
-    print(name.title())
+## Looping through all keys in dictionary
+#for name in favorite_languages.keys():
+#    print(name.title())
 
+## while Loops
+## Removing Instances from a list
+#pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']
+#print(pets)
+#while 'cat' in pets:
+#    pets.remove('cat')
+#    print(pets)
+
+#responses = {}
+#polling_active = True
+#while polling_active:
+#    name = input('Enter ur Name \n')
+#    party = input('whon do you want to vote \n')
+
+#    responses[name] = party    
+
+#    poll = input('Do you want to continue ? (y/n)')    
+#    if poll == 'n':
+#        polling_active = False
+
+#for name, party in responses.items():
+#    print (name + ' want to vote for ' + party)
+
+##Functions
+# Positional arguments
+#def describe_pet(animal_type, pet_name):
+#    """Display information about a pet."""
+#    print("\nI have a " + animal_type + ".")
+#    print("My " + animal_type + "'s name is " + pet_name.title() + ".")
+
+#describe_pet('cat','Meow')
+#describe_pet('cow','ganga')
+
+# keyword based Arguments
+#def describe_pet(animal_type, pet_name):
+#    """Display information about a pet."""
+#    print("\nI have a " + animal_type + ".")
+#    print("My " + animal_type + "'s name is " + pet_name.title() + ".")
+
+#describe_pet(animal_type = 'cat', pet_name = 'Meow')
+#describe_pet('cow','ganga')
+
+# Returning a value from a function
+def ood_even(num):
+    if (num%2) == 0:
+        return 'Even'
+    else:
+        return 'Odd' 
+
+print(ood_even(4))

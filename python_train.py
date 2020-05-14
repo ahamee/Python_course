@@ -173,10 +173,33 @@ y = 0
 #describe_pet('cow','ganga')
 
 # Returning a value from a function
-def ood_even(num):
-    if (num%2) == 0:
-        return 'Even'
-    else:
-        return 'Odd' 
+#def ood_even(num):
+#    if (num%2) == 0:
+#        return 'Even'
+#    else:
+#        return 'Odd' 
 
-print(ood_even(4))
+#print(ood_even(4))
+
+## Arbitary Number of aurguments
+#toppi = []
+#def Pizza_topings(*toppings):
+#    print(toppings)
+
+#Pizza_topings('chillies')    
+
+#for items in toppi:
+#    print(items)
+
+## Arbitary keyword Arguments
+def user_info(first_name, Last_name, **personal_info):
+    profile = {}
+    profile['first_name'] = first_name.title()
+    profile['last_name'] = Last_name.title()
+    # use for loop for storing personal info items 
+    for key, value in personal_info.items():
+        profile[key] = value
+    return profile
+
+profil = user_info('abdul', 'hameed', age=25, email = 'hameed@gmail.com')
+print(profil)

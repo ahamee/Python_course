@@ -201,5 +201,12 @@ def user_info(first_name, Last_name, **personal_info):
         profile[key] = value
     return profile
 
-profil = user_info('abdul', 'hameed', age=25, email = 'hameed@gmail.com')
-print(profil)
+#profil = user_info('abdul', 'hameed', age=25, email = 'hameed@gmail.com')
+#print(profil)
+
+import python_train
+
+pro = python_train.user_info('abdul','hameed',age=26,email='hameedm@gmail.com')
+print(pro)
+
+print("CHudi Ba")

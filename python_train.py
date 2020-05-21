@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+#from datetime import datetime, timedelta
 #today = datetime.now()
 #print('todays date is: '+ str(today))
 
@@ -18,8 +18,8 @@ from datetime import datetime, timedelta
 #print('Birthday ' + str(DOB))
 
 # Error Handeling
-x = 42
-y = 0
+#x = 42
+#y = 0
 #try:
 #    print(x/y)
 #except ZeroDivisionError as e:
@@ -192,21 +192,33 @@ y = 0
 #    print(items)
 
 ## Arbitary keyword Arguments
-def user_info(first_name, Last_name, **personal_info):
-    profile = {}
-    profile['first_name'] = first_name.title()
-    profile['last_name'] = Last_name.title()
-    # use for loop for storing personal info items 
-    for key, value in personal_info.items():
-        profile[key] = value
-    return profile
+#def user_info(first_name, Last_name, **personal_info):
+#    profile = {}
+#    profile['first_name'] = first_name.title()
+#    profile['last_name'] = Last_name.title()
+#    # use for loop for storing personal info items 
+#    for key, value in personal_info.items():
+#        profile[key] = value
+#    return profile
 
-#profil = user_info('abdul', 'hameed', age=25, email = 'hameed@gmail.com')
-#print(profil)
+##profil = user_info('abdul', 'hameed', age=25, email = 'hameed@gmail.com')
+##print(profil)
 
-import python_train
+#import python_train
 
-pro = python_train.user_info('abdul','hameed',age=26,email='hameedm@gmail.com')
-print(pro)
+#pro = python_train.user_info('abdul','hameed',age=26,email='hameedm@gmail.com')
+#print(pro)
 
-print("CHudi Ba")
+#print("CHudi Ba")\
+
+## OOPS
+class Example:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    def add(self):
+        return self.a + self.b
+
+e = Example(8, 6)
+print(e.add())

@@ -212,13 +212,41 @@
 #print("CHudi Ba")\
 
 ## OOPS
-class Example:
-    def __init__(self, a, b):
-        self.a = a
-        self.b = b
+#class Example:
+#    'this is an sample class for adding two numbers'
+#    def __init__(self, a, b):
+#        self.a = a
+#        self.b = b
 
-    def add(self):
-        return self.a + self.b
+#    def add(self):
+#        return self.a + self.b
 
-e = Example(8, 6)
-print(e.add())
+#e = Example(8, 6)
+#print(e.add())
+#print(Example.__doc__)
+
+#class Employee:
+#    def __init__(self, first, Last, age, pay):
+#        self.first = first
+#        self.Last = Last
+#        self.age = age
+#        self.pay = pay
+    
+#Emp1 = Employee('abdul','Hameed',25,60000)
+#Emp2 = Employee('abdul','Waheed',25,70000)
+#print(Emp1.first)
+#print(Emp2.Last)
+
+class Student:
+    age = 26
+    USN = '1gv12ec001'
+    name = 'Abdul'
+
+    def student_details(self):
+        print('The student details')
+
+s1 = Student()
+#details = s1.student_details()
+print(s1.age)
+print(s1.USN)
+print(s1.name)

@@ -238,15 +238,20 @@
 #print(Emp2.Last)
 
 class Student:
-    age = 26
-    USN = '1gv12ec001'
-    name = 'Abdul'
+    age = 26             # |
+    USN = '1gv12ec001'   # |------Instance vriables or class variable
+    name = 'Abdul'       # |
 
     def student_details(self):
+        clg = 'ttit' # Local Variables
+        print('clg = ', clg)
+        print('age = ', self.age)
+        print('USN = ', self.USN)
+        print('name = ', self.name)
         print('The student details')
+    def reading(self):
+        print('reading....')
+
 
 s1 = Student()
-#details = s1.student_details()
-print(s1.age)
-print(s1.USN)
-print(s1.name)
+s1.student_details()

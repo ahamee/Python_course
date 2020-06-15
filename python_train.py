@@ -237,21 +237,131 @@
 #print(Emp1.first)
 #print(Emp2.Last)
 
-class Student:
-    age = 26             # |
-    USN = '1gv12ec001'   # |------Instance vriables or class variable
-    name = 'Abdul'       # |
+#class Student:
+#    age = 26             # |
+#    USN = '1gv12ec001'   # |------Instance vriables or class variable
+#    name = 'Abdul'       # |
 
-    def student_details(self):
-        clg = 'ttit' # Local Variables
-        print('clg = ', clg)
-        print('age = ', self.age)
-        print('USN = ', self.USN)
-        print('name = ', self.name)
-        print('The student details')
-    def reading(self):
-        print('reading....')
+#    def student_details(self):
+#        clg = 'ttit' # Local Variables
+#        print('clg = ', clg)
+#        print('age = ', self.age)
+#        print('USN = ', self.USN)
+#        print('name = ', self.name)
+#        print('The student details')
+#    def reading(self):
+#        print('reading....')
 
 
-s1 = Student()
-s1.student_details()
+#s1 = Student()
+#s1.student_details()
+
+#class Employee:
+#    empl_count = 0
+
+#    def __init__(self, name, salary):
+#        self.name = name
+#        self.salary = salary
+#        self.empl_count += 1
+
+#    def displayCount(self):
+#        print("Total Employees are %d" % Employee.empl_count)
+    
+#    def diplayEmploye(self):
+#        print("Name: ", self.name, ", Salary: ", self.salary)
+
+
+#emp1 = Employee('Test1',50000)
+#emp2 = Employee('Test2',60000)
+
+#emp1.diplayEmploye()
+#emp2.diplayEmploye()
+#print(Employee.displayCount)
+
+#class Employee:
+#    'Common base class for all employees'
+#    empCount = 0
+#    def __init__(self, name, salary):
+#        self.name = name
+#        self.salary = salary
+#        Employee.empCount += 1
+
+#    def displayCount(self):
+#        print ("Total Employee %d" % Employee.empCount)
+    
+#    def displayEmployee(self):
+#        print ("Name : ", self.name, ", Salary: ", self.salary)
+
+
+##This would create first object of Employee class"
+#emp1 = Employee("Zara", 2000)
+##This would create second object of Employee class"
+#emp2 = Employee("Manni", 5000)
+#emp1.displayEmployee()
+#emp2.displayEmployee()
+#print ("Total Employee %d" % Employee.empCount)
+#print ("Employee.__doc__:", Employee.__doc__)
+#print ("Employee.__name__:", Employee.__name__)
+#print ("Employee.__module__:", Employee.__module__)
+#print ("Employee.__bases__:", Employee.__bases__)
+#print ("Employee.__dict__:", Employee.__dict__ )
+
+#class Presenter():
+#    def __init__(self,name):
+#        self.name = name
+
+#    @property
+#    def name(self):
+#        print ('In Getter')
+#        return self.__name
+
+#    @name.setter
+#    def name(self,value):
+#        print('In setter')
+#        self.__name = value
+
+#presenter = Presenter('chris')
+##presenter.name  = 'Chrostopher'
+##presenter.say_hello()
+#print(presenter.name)
+
+# Inheritance
+# Accessing One Class from another as SubClass
+#class Parents:
+#    'this is a parent class or Super Class'
+#    def __init__(self, name):
+#        self.name = name
+
+#    def say_hello(self):
+#        print('Hello, ' + self.name)
+
+#class Student(Parents):
+#    'This is a Child class or a Subclass'
+#    def __init__(self, name, school):
+#        # in Order to access arguments from super class into the constructer of child class use super().__init__(argument) 
+#        super().__init__(name)
+#        self.school = school
+#    def sing_school_song(self):
+#        print("long Live " + self.school)
+
+#student = Student('Harry', 'Howgart')
+#student.say_hello()
+#student.sing_school_song()
+
+# Inheritance
+#class Vehicle:
+
+#    def __init__(self, veh_type):
+#        self.veh_type = veh_type
+#    def car_name (self, name):
+#        return "The "+ self.veh_type +" Name is " + name
+
+#class Vehicle_specification(Vehicle):
+
+#    def des(self):
+#        return "Completed"
+
+#vehi = Vehicle_specification('HatchBack')
+#car = vehi.car_name('Swift')
+#print(car)
+

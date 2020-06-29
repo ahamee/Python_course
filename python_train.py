@@ -365,3 +365,141 @@
 #car = vehi.car_name('Swift')
 #print(car)
 
+#class BankAccount:
+#    # initializr the class
+#    def __init__(self):
+#        self.balance = 0
+    
+#    # This function takes the amount you deposit into the bank account
+#    def deposit(self, amount):
+#        self.balance = self.balance + amount
+
+#    def withdraw(self, amount):
+#        if self.balance >= amount:
+#            self.balance -= amount
+#        else:
+#            print("Insufficient Funds")
+    
+#    def print_balance(self):
+#        return self.balance
+
+#account = BankAccount()
+#for i in range (1,5):
+#    account.deposit(int(input("Enter the amount to be deposited \n")))
+
+#account.withdraw(6000000)
+#money = account.print_balance()
+
+#print(money)
+
+#class Person:
+#    def __init__(self, Name, age):
+#        self.Name = Name
+#        self.age = age
+    
+#    def myfunc(self):
+#        print("Hello {} age is {}".format(self.Name, self.age))
+
+#p1 = Person("Name", 26)
+#p1.age = 55
+#del p1.age
+#p1.myfunc()
+
+## Advance Python
+
+## there are 3 types of Methods
+## 1. Instance Methods 
+## 2. Class Methods
+## 3. Static Methods
+
+#class Student:
+
+#    # Class Varaible
+#    school = "BEML"
+
+#    def __init__(self, m1, m2, m3):
+#        self.m1 = m1
+#        self.m2 = m2
+#        self.m3 = m3
+
+#    # instance method as it works with Object
+#    # 2 types of instances Accesors(to fetch) and Mutators (to Update)
+#    def avg(self):
+#      return (self.m1 + self.m2 + self.m3)/3
+
+#    # get method (getter) accessors
+#    def get_m1(self):
+#        return self.m1
+
+#    # Set Method (Setter) Mutators
+#    def set_m1(self, value):
+#        self.m1 = value
+
+#    # Class Methods to access Class Variables
+#    @classmethod
+#    def school_Name(cls):
+#        return cls.school
+
+#    # Static Methods Nothing to do with class variable or Instance variable
+#    @staticmethod
+#    def Info():
+#        print("This is student class.. in this module")
+
+
+#s1 = Student(32,46,67)
+#s1 = Student(39,45,65)
+
+#print(s1.avg())
+#print(Student.school_Name())
+#Student.Info()
+
+## Class within a Class
+
+#class Student:
+
+#    def __init__(self, Name, Roll):
+#        self.Name = Name
+#        self.Roll = Roll
+#        self.Lap = self.Laptop()
+
+#    def show(self):
+#        print(self.Name, self.Roll)
+#        self.Lap.show()
+
+#    class Laptop:
+        
+#        def __init__(self):
+#            self.brand = 'HP'
+#            self.Processor = 'AMD Ryzen'
+#            self.Ram = "HyperX 8GB"
+#        def show(self):
+#            print('This is an ' + self.brand + ' Laptop it is powered with ' + self.Processor + 'and Ram ' + self.Ram)
+
+#s1 = Student('Chudi Baa', '13')
+#s2 = Student('Abdul', '01')
+#s1.show()
+#s1.Laptop.show
+
+# inheritance 
+class A:
+
+    def __init__(self):
+        print('in init of A')
+    def feature1(self):
+        print('Feature1 working')
+    def feature2(self):
+        print('Feature2 working')
+
+class B(A):
+
+    def __init__(self):
+        #super represents the super class
+        super().__init__()
+        print('in init of B')
+
+    def feature3(self):
+        print('Feature3 working')
+    def feature4(self):
+        print('Feature4 working')
+#TO call both the __init__ for A and B we have to use super
+a1 = B()

@@ -481,25 +481,72 @@
 #s1.Laptop.show
 
 # inheritance 
-class A:
+#class A:
 
-    def __init__(self):
-        print('in init of A')
-    def feature1(self):
-        print('Feature1 working')
-    def feature2(self):
-        print('Feature2 working')
+#    def __init__(self):
+#        print('in init of A')
+#    def feature1(self):
+#        print('Feature1 working')
+#    def feature2(self):
+#        print('Feature2 working')
 
-class B(A):
+#class B:
 
-    def __init__(self):
-        #super represents the super class
-        super().__init__()
-        print('in init of B')
+#    def __init__(self):
+#        #super represents the super class
+        
+#        print('in init of B')
 
-    def feature3(self):
-        print('Feature3 working')
-    def feature4(self):
-        print('Feature4 working')
-#TO call both the __init__ for A and B we have to use super
-a1 = B()
+#    def feature3(self):
+#        print('Feature3 working')
+#    def feature4(self):
+#        print('Feature4 working')
+
+#class C(A,B):
+
+#    def __init__(self):
+#        super().__init__()
+#        print('in init of C')
+    
+#    def feature5(self):
+#        # using super for method
+#        super().feature3()
+#        print('feature 5 working')
+#    def feature6(self):
+#        print('feature 6 working')
+
+## when we call class C which has inherited class A and class B then first the __init__ of class A will 
+## be called then __inti__ of class C (Left one first this method is called Method Resolution Order)  
+#c1 = C()
+#c1.feature5()
+
+# Polimorhism:different forms of Object
+# The four ways of implementing Polymorphism
+# 1. Duck Typing
+# 2. Operator Overloading
+# 3. Method Overloading
+# 4. Method OverRididng
+# 
+# 1. Duck typing: If a bird is walking like a duck, Quakes like a duck and swim like a duck then that bird is Duck
+# Example
+class Pycharm:
+    def Execute(self):
+        print('compiling')
+        print('executing')
+
+class VScode:
+    def Execute(self):
+        print('compiling')
+        print('executing')
+
+class Laptop:
+    def code(self,ide):
+        ide.Execute()
+
+#ide = Pycharm()
+ide = VScode()
+
+# Irrespective of class Pycharm or Vscode the Method execute must be the same so that it can called in Laptop
+Lap = Laptop()
+Lap.code(ide)
+#saved

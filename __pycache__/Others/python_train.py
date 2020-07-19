@@ -529,24 +529,42 @@
 # 
 # 1. Duck typing: If a bird is walking like a duck, Quakes like a duck and swim like a duck then that bird is Duck
 # Example
-class Pycharm:
-    def Execute(self):
-        print('compiling')
-        print('executing')
+#class Pycharm:
+#    def Execute(self):
+#        print('compiling')
+#        print('executing')
 
-class VScode:
-    def Execute(self):
-        print('compiling')
-        print('executing')
+#class VScode:
+#    def Execute(self):
+#        print('compiling')
+#        print('executing')
 
-class Laptop:
-    def code(self,ide):
-        ide.Execute()
+#class Laptop:
+#    def code(self,ide):
+#        ide.Execute()
 
-#ide = Pycharm()
-ide = VScode()
+##ide = Pycharm()
+#ide = VScode()
 
-# Irrespective of class Pycharm or Vscode the Method execute must be the same so that it can called in Laptop
-Lap = Laptop()
-Lap.code(ide)
-#saved
+## Irrespective of class Pycharm or Vscode the Method execute must be the same so that it can called in Laptop
+#Lap = Laptop()
+#Lap.code(ide)
+
+import  pyodbc
+
+def read(conn):
+    print("Read")
+    cursor = conn.cursor()
+    cursor.execute("select * from tbl_customers")
+    for row in cursor:
+        print(f'row = {row}')
+    print()
+
+conn = pyodbc.connect(
+    "Driver={SQL Server Native Client 11.0};"
+    "Server=DESKTOP-A5P1CUL\HAMEEDSQLSERVER;"
+    "Database=tutorial;"
+    "Trusted_Connection=yes;"
+)
+
+read(conn)
